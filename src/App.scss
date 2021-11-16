@@ -1,0 +1,68 @@
+@import '_setting.scss';
+
+
+
+body{
+   margin: 0;
+   font-size: 14px;
+   padding: 0;
+   line-height: 1.3em;
+   box-sizing: border-box;
+   font-family: 'Source Sans Pro', sans-serif;
+}
+.trello{
+   height: 100vh;
+   overflow: hidden;
+   background-color: $board-bg-color;
+
+   .icon{
+      font-size: 14px;
+      margin: 0 3px;
+   }
+
+   .trello-container{
+      padding: 0;
+      margin: 0 15px;;
+   }
+}
+
+.form-control:focus{
+   outline: none !important;
+   box-shadow: none !important;
+   border: 1px solid $input-bg-color !important;
+}
+
+.btn:focus, .btn.active{
+   outline: none !important;
+   box-shadow: none !important;
+}
+
+.column-title{
+
+   .trello-content-editable{
+      margin: 8px 0;
+      font-size: 16px;
+      background-color: inherit;
+      border: none;
+      font-size: inherit;
+      font-weight: inherit;
+      cursor: pointer;
+
+      &:focus{
+         background-color: white;
+      }
+   }
+
+}
+
+span.cancel-icon{
+   margin-left: $gap;
+
+   i{
+      cursor: pointer;
+      color:$alert-danger;
+      &:hover{
+         color: darken($alert-danger, 10);
+      }
+   }
+}

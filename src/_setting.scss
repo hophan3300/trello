@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+@import "~bootstrap/scss/bootstrap";
+$gap:10px;
+$navbar-app-height: 5vh;
+$navbar-board-height: 6vh;
+$board-content-height: 88vh;
+$column-height: calc(#{$board-content-height} - #{$gap * 2});
+
+$board-bg-color: #0097bf;
+$input-bg-color: #0097bf;
+$appbar-bg-color: #0067a3;
+$list-bg-color: #ebecf0;
+$app-main-text-color: #333;
+$columns-header-height:46px;
+$columns-footer-height:46px;
+$columns-border-radius:5px;
+$card-border-radius: 4px;
+$common-element-bg: rgba(255,255,255,.24);
+$alert-danger: #ee5253;

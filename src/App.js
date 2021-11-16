@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+
+import './App.scss'
+import 'font-awesome/css/font-awesome.min.css'
+
+
+import AppBar from 'components/app-bar/AppBar';
+import BoardBar from 'components/board-bar/BoardBar';
+import BoardContent from 'components/board-content/BoardContent'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="trello">
+      <AppBar/>
+      <BoardBar/>
+      <BoardContent/>
+      </div>
   );
 }
 
